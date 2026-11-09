@@ -136,7 +136,7 @@ function App() {
   };
 
   return (
-    <div className="app">
+    <div className="app min-h-screen">
       <header className="navbar">
         <a href="#home" className="logo">
           <span className="logo-icon">
@@ -211,7 +211,7 @@ function App() {
 
       <main>
         <section className="hero" id="home">
-          <div className="hero-content">
+          <div className="hero-content flex flex-col">
             <div className="eyebrow">
               <span></span> YOUR NEXT ADVENTURE STARTS HERE
             </div>
@@ -338,7 +338,7 @@ function App() {
             </div>
           </div>
 
-          <div className="games-grid">
+          <div className="games-grid grid">
             {filteredGames.map((game) => (
               <article className="game-card" key={game.id}>
                 <div
